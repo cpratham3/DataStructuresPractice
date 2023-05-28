@@ -3,16 +3,20 @@ import dataStructures.Array;
 public class Main {
     public static void main(String[] args) {
         Array A = new Array(3);
-        A.addElement(20);
-        A.addElement(30);
-        A.addElement(40);
-        A.addElement(50);
-        A.addElement(60);
-        A.addElement(70);
-        A.addElement(80);
-        A.addElement(90);
+
         A.addElement(100);
+        A.addElement(110);
+        A.addElement(120);
+        A.addElement(130);
+        A.addElement(140);
+        A.addElement(150);
+        A.addElement(160);
+        A.addElement(170);
+        A.addElement(180);
+        A.addElement(190);
+        A.removeAt(3);
         A.print();
+        System.out.println(A.indexOf(160));
 
     }
 }

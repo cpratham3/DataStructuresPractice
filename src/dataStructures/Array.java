@@ -16,19 +16,34 @@ public class Array {
     public void addElement(int element){
     if(items.length==count) {
         int[] newArray = new int[count*2];
-
         for(int i=0;i<count;i++){
             newArray[i]=items[i];
-
         }
     items= newArray;
     }
+    items[count] = element;
+    count++;
+    }
+    public void removeAt(int index){
 
-    else {
-        items[count] = element;
-        count++;
+
+            if (index < 0 || index >= count) {
+                throw new IndexOutOfBoundsException(" Index is out of Bounds");
+            }
+            for (int i = index; i < count; i++) {
+                items[i] = items[i + 1];
+            }
+            count--;
+
     }
 
+    public int indexOf(int item){
+        for(int i =0;i<count;i++){
+            if(items[i]==item){
+                return i;
+            }
 
         }
+        return -1;
     }
+}
