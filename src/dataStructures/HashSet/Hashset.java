@@ -1,10 +1,11 @@
 package dataStructures.HashSet;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 public class Hashset {
     public static void main(String[] args) {
-        HashSet<String> cars = new HashSet<>();
+        Set<String> cars = new HashSet<>();
         cars.add("Mazda CX3");
         cars.add("BMW M3");
         cars.add("Chevrolet Malibu");

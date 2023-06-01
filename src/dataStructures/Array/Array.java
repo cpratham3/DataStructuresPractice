@@ -1,4 +1,4 @@
-package dataStructures;
+package dataStructures.Array;
 public class Array {
     private int count;
     private int[] items;
