@@ -1,7 +1,11 @@
 package dataStructures.Array;
+
+import java.util.Scanner;
+
 public class Array {
     private int count;
     private int[] items;
+
 
     public Array(int length) {
         items = new int[length];
@@ -17,6 +21,7 @@ public class Array {
     if(items.length==count) {
         int[] newArray = new int[count*2];
         for(int i=0;i<count;i++){
+           // Scanner sc = new Scanner(System.in);
             newArray[i]=items[i];
         }
     items= newArray;
