@@ -25,9 +25,11 @@ public class Hashmap {
         peopleAges.put("Sagar",43);
         peopleAges.put("Raghav",26);
         peopleAges.put("Jaimin",22);
-        System.out.println(peopleAges.get("Jaimin"));
+        //System.out.println(peopleAges.get("Jaimin"));
 
-        Set keySet = peopleAges.keySet();
+
+        System.out.println("Keys INSIDE HASHMAP");
+        Set keySet = peopleAges.keySet();  // printing out all the keys inside the hashmap
         for (Object s:keySet) {
             System.out.println(s);
         }
@@ -37,10 +39,20 @@ public class Hashmap {
 //        Loop through the items of a HashMap with a for-each loop.
 //
 //        Note: Use the keySet() method if you only want the keys, and use the values() method if you only want the values:
-
-        for (Integer temp : peopleAges.values()) {
+        System.out.println("VALUES INSIDE HASHMAP");
+        for (Integer temp : peopleAges.values()) { // printing out all the values inside the hashmap
             System.out.println(temp);
         }
+
+        System.out.println("printing out everything that is inside hashmap");
+        System.out.println(peopleAges);
+
+        System.out.println("USing a for each loop to print all the data stored inside the hashmap");
+        for (String key : peopleAges.keySet()) { // for each loop to iterate over each key stored inside the hashmap
+            System.out.println(key + " : "+ peopleAges.get(key)); // printing out the key and the value (value is printed using get(key) method
+        }
+
+
 
 
 

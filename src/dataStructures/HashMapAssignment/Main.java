@@ -61,8 +61,8 @@ public class Main {
 
 
 
-        HashMap<Employee,Team> Data = new HashMap<>();
-        Data.put(emp1,team1);
+        HashMap<Employee,Team> Data = new HashMap<>(); // declaring the hashmap
+        Data.put(emp1,team1); // adding data into the hashmap
         Data.put(emp2,team1);
         Data.put(emp3,team2);
         Data.put(emp4,team2);
@@ -143,7 +143,7 @@ public class Main {
 
         var ess = Data.entrySet();
 
-
+// USing iterator to iterate through the keys of the HashMap
         while (iterator.hasNext()) {
             if (iterator.next().getKey().salary < 50000)
                 iterator.remove();
@@ -163,13 +163,28 @@ public class Main {
 
         System.out.println("\n\n"+employeeSet);
 
-
-
+//        System.out.println("*******Using a for each loop to print all the keys and values inside the hashMap*******");
+//        for (Employee Emp: Data.keySet()) {
+//            System.out.println(Emp+ " : "+Data.get(Emp));
+//        }
 
 
 
         List<Employee> employeeList=new ArrayList<>(employeeSet);
 
         System.out.println("Solution 1\n"+employeeList);
+
+
+
+
+        System.out.println("*******Using a for each loop to print all the keys and values inside the hashMap*******");
+        for (Employee Emp: Data.keySet()) {
+            System.out.println(Emp+ " : "+Data.get(Emp));
+        }
+
+
+
+
+
     }
 }
