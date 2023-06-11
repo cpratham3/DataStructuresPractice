@@ -1,5 +1,6 @@
 package dataStructures.HashMap;
 import java.util.HashMap;
+import java.util.*;
 public class Hashmap {
     public static void main(String[] args) {
         // Create a HashMap object called capitalCities
@@ -25,6 +26,12 @@ public class Hashmap {
         peopleAges.put("Raghav",26);
         peopleAges.put("Jaimin",22);
         System.out.println(peopleAges.get("Jaimin"));
+
+        Set keySet = peopleAges.keySet();
+        for (Object s:keySet) {
+            System.out.println(s);
+        }
+
 
 
 //        Loop through the items of a HashMap with a for-each loop.
